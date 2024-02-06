@@ -19,7 +19,7 @@ describe("SearchPokemon", () => {
         await user.click(button);
 
         await waitFor(() => {
-            expect(screen.getByText("bulbasaur")).toBeInTheDocument();
+            expect(screen.getByText("名前: bulbasaur")).toBeInTheDocument();
             expect(screen.getByText("身長: 0.7m")).toBeInTheDocument();
             expect(screen.getByText("体重: 6.9kg")).toBeInTheDocument();
         });

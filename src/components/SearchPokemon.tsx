@@ -30,7 +30,7 @@ export const SearchPokemon = () => {
             <button onClick={search}>Search</button>
             {pokemon && (
                 <div>
-                    <p>{pokemon.name}</p>
+                    <p>名前: {pokemon.name}</p>
                     <p>身長: {pokemon.height / 10}m</p>
                     <p>体重: {pokemon.weight / 10}kg</p>
                 </div>
