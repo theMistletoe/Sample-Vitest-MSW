@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import Counter from "../Counter";
+import Counter from "../components/Counter";
 import { beforeEach, describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from '@testing-library/user-event'
