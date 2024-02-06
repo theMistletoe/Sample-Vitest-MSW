@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Vitest + Testing Library + MSW
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is a template for a React project with TypeScript, Vite, Vitest, Testing Library and MSW.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Vitest](https://vitest.dev/)
+- [Testing Library](https://testing-library.com/)
+- [MSW](https://mswjs.io/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+## Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+[bun](https://bun.sh/docs/installation) is required to run the project.
+
+```bash
+npm install -g bun
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Boot and Test
+
+```bash
+bun install
+bun run dev
+bun rnu test
+```
+
+
+# Directory Structure
+
+```
+├── README.md
+├── bun.lockb
+├── index.html
+├── package.json
+├── public
+├── setup.ts // vitest setup script
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── __tests__
+│   │   ├── components
+│   │   └── libs
+│   ├── assets
+│   ├── components
+│   ├── index.css
+│   ├── libs
+│   ├── main.tsx
+│   ├── mocks // msw mocks
+│   │   ├── rest
+│   │   │   └── handlers.ts
+│   │   └── server.ts
+│   └── vite-env.d.ts
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── vitest.config.ts // vitest configuration
+```
+
