@@ -43,7 +43,7 @@ bun rnu test
 ├── src
 │   ├── App.css
 │   ├── App.tsx
-│   ├── __tests__
+│   ├── __tests__ // test files
 │   │   ├── components
 │   │   └── libs
 │   ├── assets
