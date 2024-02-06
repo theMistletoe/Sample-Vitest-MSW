@@ -1,6 +1,7 @@
 # React + TypeScript + Vite + Vitest + Testing Library + MSW
 
 this is a template for a React project with TypeScript, Vite, Vitest, Testing Library and MSW.
+VitestとMSWを使って、Reactのテストを行うためのサンプルコードです。
 
 ## Features
 
@@ -16,7 +17,7 @@ this is a template for a React project with TypeScript, Vite, Vitest, Testing Li
 
 ## Prerequisites
 
-[bun](https://bun.sh/docs/installation) is required to run the project.
+[bun](https://bun.sh/docs/installation) のインストールが必要です。
 
 ```bash
 npm install -g bun
@@ -43,7 +44,7 @@ bun rnu test
 ├── src
 │   ├── App.css
 │   ├── App.tsx
-│   ├── __tests__ // test files
+│   ├── __tests__ // テストコード
 │   │   ├── components
 │   │   └── libs
 │   ├── assets
