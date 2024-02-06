@@ -28,7 +28,7 @@ npm install -g bun
 ```bash
 bun install
 bun run dev
-bun rnu test
+bun run test
 ```
 
 
