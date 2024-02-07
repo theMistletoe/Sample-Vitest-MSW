@@ -1,23 +1,13 @@
 import { useState } from "react";
-
-type Pokemon = {
-    name: string;
-    height: number;
-    weight: number;
-};
+import { useSearchPokemon } from "../hooks/useSearchPokemon";
 
 export const SearchPokemon = () => {
-    const [pokemon, setPokemon] = useState<Pokemon | undefined>(undefined);
     const [input, setInput] = useState<string>("");
+    const { search, searchedPokemon } = useSearchPokemon();
 
-    const search = async () => {
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${input}`);
-        const data = await response.json();
-        setPokemon({
-            name: data.name,
-            height: data.height,
-            weight: data.weight
-        });
+    const handleClick = () => {
+        if (!input) return;
+        search(input);
     };
 
     return (
@@ -27,12 +17,12 @@ export const SearchPokemon = () => {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
             />
-            <button onClick={search}>Search</button>
-            {pokemon && (
+            <button onClick={handleClick}>Search</button>
+            {searchedPokemon && (
                 <div>
-                    <p>名前: {pokemon.name}</p>
-                    <p>身長: {pokemon.height / 10}m</p>
-                    <p>体重: {pokemon.weight / 10}kg</p>
+                    <p>名前: {searchedPokemon.name}</p>
+                    <p>身長: {searchedPokemon.height / 10}m</p>
+                    <p>体重: {searchedPokemon.weight / 10}kg</p>
                 </div>
             )}
         </div>
