@@ -11,7 +11,7 @@ describe("SearchPokemon", () => {
         render(<SearchPokemon />);
     });
 
-    it("数字を入力し、Searchボタンを押すと、ポケモンの名前、身長、体重が表示される", async () => {
+    it("数字を入力し、Searchボタンを押すと、ポケモンの名前、身長、体重、イメージ画像が表示される", async () => {
         const input = screen.getByPlaceholderText("ポケモンの図鑑番号");
         await user.type(input, "1");
 
@@ -22,6 +22,7 @@ describe("SearchPokemon", () => {
             expect(screen.getByText("名前: bulbasaur")).toBeInTheDocument();
             expect(screen.getByText("身長: 0.7m")).toBeInTheDocument();
             expect(screen.getByText("体重: 6.9kg")).toBeInTheDocument();
+            expect(screen.getByAltText("bulbasaur")).toBeInTheDocument();
         });
     });
 });

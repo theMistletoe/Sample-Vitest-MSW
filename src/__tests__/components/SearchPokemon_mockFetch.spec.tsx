@@ -12,6 +12,9 @@ fetchMock.mockReturnValue(
             name: "spinarak",
             height: 5,
             weight: 85,
+            sprites: {
+                front_default: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png"
+            }
         }),
     }),
 );

@@ -4,6 +4,9 @@ type Pokemon = {
     name: string;
     height: number;
     weight: number;
+    sprites: {
+        front_default: string;
+    };
 };
 
 export const useSearchPokemon = function () {
@@ -15,7 +18,8 @@ export const useSearchPokemon = function () {
         setSearchedPokemon({
             name: data.name,
             height: data.height,
-            weight: data.weight
+            weight: data.weight,
+            sprites: data.sprites,
         });
     };
 

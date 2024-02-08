@@ -7,6 +7,9 @@ export const handlers = [
             name: "bulbasaur",
             height: 7,
             weight: 69,
+            sprites: {
+                front_default: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+            }
         })
     }),
 ]

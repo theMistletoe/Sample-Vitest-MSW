@@ -23,6 +23,10 @@ export const SearchPokemon = () => {
                     <p>名前: {searchedPokemon.name}</p>
                     <p>身長: {searchedPokemon.height / 10}m</p>
                     <p>体重: {searchedPokemon.weight / 10}kg</p>
+                    <img
+                        src={searchedPokemon.sprites.front_default}
+                        alt={searchedPokemon.name}
+                    />
                 </div>
             )}
         </div>
