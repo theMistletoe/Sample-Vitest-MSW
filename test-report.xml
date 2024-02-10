@@ -1,0 +1,21 @@
+<testExecutions version="1">
+  <file path="src/__tests__/components/AlertButton.spec.tsx">
+    <testCase name="AlertButton - ボタンを押すとアラートが表示される" duration="75" />
+  </file>
+  <file path="src/__tests__/components/Counter.spec.tsx">
+    <testCase name="Counter - カウンターの初期値は0" duration="44" />
+    <testCase name="Counter - incrementボタンを押すとカウンターが1増える" duration="60" />
+  </file>
+  <file path="src/__tests__/components/Header.spec.tsx">
+    <testCase name="Header - 見出しメッセージが見える" duration="42" />
+  </file>
+  <file path="src/__tests__/components/SearchPokemon.spec.tsx">
+    <testCase name="SearchPokemon - 数字を入力し、Searchボタンを押すと、ポケモンの名前、身長、体重、イメージ画像が表示される" duration="151" />
+  </file>
+  <file path="src/__tests__/components/SearchPokemon_mockFetch.spec.tsx">
+    <testCase name="SearchPokemon - 数字を入力し、Searchボタンを押すと、ポケモンの名前、身長、体重が表示される" duration="119" />
+  </file>
+  <file path="src/__tests__/libs/sum.spec.ts">
+    <testCase name="adds 1 + 2 to equal 3" duration="2" />
+  </file>
+</testExecutions>
