@@ -26,3 +26,4 @@ dist-ssr
 
 coverage
 .scannerwork
+test-report.xml
