@@ -12,13 +12,14 @@ export default defineConfig({
         coverage: {
             provider: 'v8',
             include: ['src/**/*.{tsx,js,ts}'],
+            exclude: ['src/App.tsx', 'src/main.tsx'],
             all: true,
             // lcovを追加
             reporter: ['html', 'clover', 'text', 'lcov']
-          },
-          root: '.',
-          // vitest-sonar-reporterを追加
-          reporters: ['verbose', 'vitest-sonar-reporter'],
-          outputFile: 'test-report.xml'
+        },
+        root: '.',
+        // vitest-sonar-reporterを追加
+        reporters: ['verbose', 'vitest-sonar-reporter'],
+        outputFile: 'test-report.xml',
     },
 });
