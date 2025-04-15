@@ -9,6 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest --coverage",
+    "test:ci": "vitest run --coverage",
     "bootSonar": "docker run -d --init --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest",
     "sonar": "sonar-scanner"
   },
