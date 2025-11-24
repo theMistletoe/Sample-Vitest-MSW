@@ -6,6 +6,6 @@ import { render, screen } from "@testing-library/react";
 describe("Header", () => {
     it("見出しメッセージが見える", () => {
         render(<Header />);
-        expect(screen.getByText("Hello, world!")).toBeInTheDocument();
+        expect(screen.getByText("Hello!")).toBeInTheDocument();
     });
 });

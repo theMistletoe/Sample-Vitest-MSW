@@ -1,15 +1,15 @@
 import './App.css'
 import { SearchPokemon } from './components/SearchPokemon'
 import Header from './components/Header'
-import Counter from './components/Counter'
+// import Counter from './components/Counter'
 
 function App() {
   return (
     <>
       <Header />
-      <hr />
+      {/* <hr />
       <Counter />
-      <hr />
+      <hr /> */}
       <SearchPokemon />
     </>
   )
